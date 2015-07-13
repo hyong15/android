@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 页卡数组 -->
+    <string-array name="array_tab">
+        <item>My Device</item>
+        <item>Demo</item>
+        <item>Setting</item>
+        <item>Mine</item>
+    </string-array>
+    <!-- more feature func -->
+    <string-array name="array_more">
+        <item>Help</item>
+        <item>Auto-Login</item>
+        <item>Alarm Setting</item>
+        <item>Alarm Message</item>
+        <item>Viewing Mode(Single-device)</item>
+        <item>Share</item>
+        <item>Scene Picture</item>
+        <item>Cloud Storage Activated</item>
+        <item>I want this</item>
+        <item>Enter into community</item>
+        <item>System Information</item>
+        <item>Image View</item>
+        <item>Feedback</item>
+        <item>Software Update</item>
+        <item>Version</item>
+        <item>Helper</item>
+        <item>BroadCast</item>
+        <item>Test Switch</item>
+        <item>Foreign server</item>
+        <item>Version</item>
+    </string-array>
+    <string-array name="array_moreduo">
+        <item>Help</item>
+        <item>Auto-Login</item>
+        <item>Alarm Setting</item>
+        <item>Alarm Message</item>
+        <item>Viewing Mode(Multi-device)</item>
+        <item>Share</item>
+        <item>Scene Picture</item>
+        <item>Cloud Storage Activated</item>
+        <item>I want this</item>
+        <item>Enter into community</item>
+        <item>System Information</item>
+        <item>Image View</item>
+        <item>Feedback</item>
+        <item>Software Update</item>
+        <item>Version</item>
+        <item>Helper</item>
+        <item>BroadCast</item>
+        <item>Test Switch</item>
+        <item>Foreign server</item>
+        <item>Version</item>
+    </string-array>
+    <!-- add Dev pop menu -->
+    <string-array name="array_pop">
+        <item>Add by CloudSEE ID</item>
+        <item>Add by sound wave</item>
+        <item>Add Wi-Fi Device</item>
+        <item>Scan QR Code</item>
+        <item>IP/DNS</item>
+    </string-array>
+    <string-array name="array_popno">
+        <item>Add by CloudSEE ID</item>
+        <item>Add by sound wave</item>
+        <item>Add Wi-Fi Device</item>
+        <item>Scan QR Code</item>
+    </string-array>
+    <!-- 家庭安防产品 -->
+    <string-array name="time_zone">
+        <item>UTC+12</item>
+        <item>UTC+11</item>
+        <item>UTC+10</item>
+        <item>UTC+9</item>
+        <item>UTC+8</item>
+        <item>UTC+7</item>
+        <item>UTC+6</item>
+        <item>UTC+5</item>
+        <item>UTC+4</item>
+        <item>UTC+3</item>
+        <item>UTC+2</item>
+        <item>UTC+1</item>
+        <item>UTC</item>
+        <item>UTC-1</item>
+        <item>UTC-2</item>
+        <item>UTC-3</item>
+        <item>UTC-4</item>
+        <item>UTC-5</item>
+        <item>UTC-6</item>
+        <item>UTC-7</item>
+        <item>UTC-8</item>
+        <item>UTC-9</item>
+        <item>UTC-10</item>
+        <item>UTC-11</item>
+        <item>UTC-12</item>
+    </string-array>
+    <!-- 图片质量 -->
+    <string-array name="array_image_quality">
+        <item>Fluent</item>
+        <item>Clear</item>
+    </string-array>
+    <!-- 帧率 -->
+    <string-array name="array_clear">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    <!-- 码流质量 -->
+    <string-array name="array_fluent">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>384</item>
+    </string-array>
+    <!-- 非家庭安防产品 -->
+    <!-- 图片质量 -->
+    <string-array name="array_image_quality_not">
+        <item>Fluent</item>
+    </string-array>
+    <!-- 帧率 -->
+    <string-array name="array_clear_not">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <!-- 码流质量 -->
+    <string-array name="array_fluent_not">
+        <item>128</item>
+        <item>256</item>
+        <item>384</item>
+    </string-array>
+    <!-- 分屏数 -->
+    <integer-array name="array_screen">
+        <item>4</item>
+        <item>9</item>
+        <item>16</item>
+    </integer-array>
+    <!-- 告警类型 -->
+    <string-array name="alarm_type">
+        <item>Disk Error Alarm, Device:%%.</item>
+        <item>Disk Full Alarm, Device:%%.</item>
+        <item>Disconnection Alarm, Device:%%.</item>
+        <item>System Update Alarm, Device:%%.</item>
+        <item>Input Alarm, Device:%%.</item>
+        <item>Video Lost Alarm, Device:%%.</item>
+        <item>Video Covered Alarm, Device:%%.</item>
+        <item>Motion Detection Alarm, Device:%%.</item>
+        <item>Power Off Alarm, Device:%%.</item>
+        <item>Manual Alarm, Device:%%.</item>
+        <item>GPS Alarm, Device:%%.</item>
+        <item>Security Alarm, Device:%%.</item>
+        <item>ALARM_NONE, Device:%%.</item>
+        <item>ALARM_NOTIFY, Device:%%.</item>
+        <item>ALARM_TEMP_HIGH, Device:%%.</item>
+        <item>ALARM_TEMP_LOW, Device:%%.</item>
+        <item>ALARM_HUM_HIGH, Device:%%.</item>
+        <item>ALARM_HUM_LOW, Device:%%.</item>
+        <item>ALARM_TEMP_HIGH_HUM_HIGH, Device:%%.</item>
+        <item>ALARM_TEMP_HIGH_HUM_LOW, Device:%%.</item>
+        <item>ALARM_TEMP_LOW_HUM_HIGH, Device:%%.</item>
+        <item>ALARM_TEMP_LOW_HUM_LOW, Device:%%.</item>
+    </string-array>
+    <!-- 播放器选择 -->
+    <string-array name="player_selector">
+        <item>System player</item>
+        <item>The third party player</item>
+    </string-array>
+    <!-- 视频管理功能 -->
+    <string-array name="manage_function">
+        <item>Net Setting</item>
+        <item>Device</item>
+        <item>Connection Mode</item>
+        <item>Channel</item>
+        <item>Video</item>
+        <item>Version info</item>
+        <item>Alarm Setting</item>
+    </string-array>
+    <!-- 第三方外设报警管理 -->
+    <string-array name="peripherals_manage">
+        <item>Door Magnetic</item>
+        <item>Hand Ring</item>
+        <item>Remote Control</item>
+        <item>Smoke Detector</item>
+        <item>PIR Detector</item>
+        <item>IR Detector</item>
+        <item>Gas Leak Detector</item>
+    </string-array>
+    <!-- 码流切换 -->
+    <string-array name="array_stream">
+        <item>&#160;&#160;&#160;HD&#160;&#160;&#160;</item>
+        <item>&#160;&#160;&#160;MD&#160;&#160;&#160;</item>
+        <item>&#160;&#160;&#160;LD&#160;&#160;&#160;</item>
+    </string-array>
+    <string-array name="array_third_guide">
+        <item>Seperate the two parts of the magnetic alarm and wait until the setting finished.</item>
+        <item>Seperate the two parts of the magnetic alarm and wait until the setting finished.</item>
+        <item>Long press the red button on the wrist ring and wait until the setting finished.</item>
+        <item>Long press any button on the remote control and wait until the setting finished.</item>
+        <item>Enable the device testing button, and wait until configuration finished.</item>
+        <item>Enable the device testing button, and wait until configuration finished.</item>
+        <item>Swing your arm for several times at around 10 centimeters in front of the device,and wait until configuration finished.</item>
+        <item>Enable the device testing button, and wait until configuration finished.</item>
+    </string-array>
+    <!-- 报警设置功能标题数组 -->
+    <string-array name="alarm_settings_title">
+        <item>Information Delivery</item>
+        <!-- tag -->
+        <item>Alarm Information Delivery</item>
+        <item>Warning Tone</item>
+        <!-- tag -->
+        <item>Bell</item>
+        <item>Vibration</item>
+    </string-array>
+    <!-- 报警设置功能子标题数组与上边那个一一对应 -->
+    <string-array name="alarm_settings_tips">
+        <item>0</item>
+        <!-- tag 无子标题tips -->
+        <item>New alarm info can be received after start-up</item>
+        <item>2</item>
+        <!-- tag 无子标题tips -->
+        <item>Bell remind when get notification</item>
+        <item>Vibration remind when get notification</item>
+    </string-array>
+    <!-- 底部Tabs的默认顺序,字母表示fragment的唯一标识 -->
+    <string-array name="array_tabs_sequence">
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+        <item>e</item>
+    </string-array>
+    <!-- 播放界面中相关功能.普通 -->
+    <string-array name="array_play_functions_common">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+    <!-- 播放界面中相关功能.AP -->
+    <string-array name="array_play_functions_ap">
+        <item>a</item>
+        <item>d</item>
+    </string-array>
+    <!-- 播放界面中相关功能.猫眼 -->
+    <string-array name="array_play_functions_cat">
+        <item>e</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <!-- 添加设备手动添加.加密类型 -->
+    <string-array name="array_wifiencrypt">
+        <item>NONE</item>
+        <item>WEP</item>
+        <item>TKIP</item>
+        <item>AES</item>
+    </string-array>
+    <!-- 添加设备手动添加.加密方式 -->
+    <string-array name="array_wifiauth">
+        <item>OPEN</item>
+        <item>SHARED</item>
+        <item>WEPAUTO</item>
+        <item>WPAPSK</item>
+        <item>WPA2PSK</item>
+        <item>WPANONE</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部空白部分 -->
+
+    <View
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/cloud_traffic_color_1"
+        android:visibility="gone" >
+    </View>
+
+    <!-- 顶部灰色实线 -->
+
+    <include
+        android:id="@+id/divider_top"
+        layout="@layout/gray_divider_v"
+        android:visibility="gone" />
+
+    <!-- 单个列表内容 -->
+
+    <FrameLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <LinearLayout
+                android:id="@+id/item_img_llyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <!-- 左侧图标 -->
+
+                <ImageView
+                    android:id="@+id/item_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/morefragment_help_icon"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <!-- 功能名称 -->
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/item_img_llyt"
+                android:text="报警信息"
+                android:textColor="@color/more_fragment_color5"
+                android:textSize="16sp" />
+
+            <!-- 右侧的提示信息(例:NEW) -->
+
+            <RelativeLayout
+                android:id="@+id/item_new_layout"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/item_next"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/morefragment_new" />
+
+                <TextView
+                    android:id="@+id/tv_item_new_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <!-- 右侧箭头图标 -->
+
+            <ImageView
+                android:id="@+id/item_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/morefragment_next_icon"
+                android:contentDescription="@null" />
+
+            <!-- 版本信息 -->
+
+            <TextView
+                android:id="@+id/item_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="v1.9.0"
+                android:textColor="@color/morefragment_version"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- 底部灰色实线 -->
+
+        <View
+            android:id="@+id/divider_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divider_line" />
+
+        <View
+            android:id="@+id/divider_bottom_match"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_line"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

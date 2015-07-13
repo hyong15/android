@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/pop_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10.5dp" >
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="使用情况 :"
+                android:textColor="@color/more_fragment_color2"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.5dp"
+                android:layout_toRightOf="@+id/one"
+                android:background="@drawable/popsave"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/Stop_recode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_marginTop="0.5dp" >
+
+                    <TextView
+                        android:id="@+id/Stop_recodetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/video_stop"
+                        android:textColor="@color/more_fragment_color2" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/more_fragment_color10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Normal_recode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp" >
+
+                    <TextView
+                        android:id="@+id/Normal_recodetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/video_normal"
+                        android:textColor="@color/more_fragment_color2" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/more_fragment_color10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Alarm_recode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp" >
+
+                    <TextView
+                        android:id="@+id/Alarm_recodetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/video_alarm"
+                        android:textColor="@color/more_fragment_color2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

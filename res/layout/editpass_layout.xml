@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar_layout" />
+
+    <LinearLayout
+        android:id="@+id/Addresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ipAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_old_pass"
+            android:textColor="@color/leftdevicecolor"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editoldpass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:background="@drawable/editimport"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/leftdevicecolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/cloud_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cloud_number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/cloudnumber_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.2"
+            android:background="#cccccc"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="A361"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_new_pass"
+            android:textColor="@color/leftdevicecolor"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editnewpass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:background="@drawable/editimport"
+            android:inputType="textVisiblePassword"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/leftdevicecolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_ensure_newpass"
+            android:textColor="@color/leftdevicecolor"
+            android:textSize="18sp"
+            android:textStyle="normal" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/editcommitpass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:background="@drawable/editimport"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/leftdevicecolor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </TextView>
+
+        <Button
+            android:id="@+id/editfinish"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/blue_bg"
+            android:text="@string/login_str_save"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

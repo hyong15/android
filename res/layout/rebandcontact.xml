@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cloud_traffic_color_1"
+    android:orientation="vertical" >
+
+    <!-- header bar -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 信息1 头像,昵称 -->
+
+            <LinearLayout
+                android:id="@+id/info_content_first"
+                style="@style/profile_info_lyt"
+                android:layout_width="match_parent" >
+
+                <include layout="@layout/gray_divider_v" />
+
+                <!-- 头像 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80.0dip" >
+
+                    <TextView
+                        style="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="80.0dip"
+                        android:clickable="true"
+                        android:drawablePadding="4.0dip"
+                        android:gravity="left|center"
+                        android:paddingLeft="20.0dip"
+                        android:paddingRight="8.0dip"
+                        android:text="@string/rebandhand"
+                        android:textColor="@color/list_item_font_color"
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:id="@+id/head_img_flyt"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10.0dip" >
+
+                        <com.jovision.views.RoundImageView
+                            android:id="@+id/reband_hand_img"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_details_head" />
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:padding="1dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/profile_details_icon_circle" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/gray_divider_v_ml20"
+                    android:visibility="gone" />
+
+                <!-- 昵称 -->
+
+                <RelativeLayout
+                    android:id="@+id/rebind_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector"
+                    android:visibility="gone" >
+
+                    <!-- 昵称的时候TextView中不设置右侧箭头图标 -->
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="@string/rebindnickname" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/reband_nickname_text"
+                            style="@style/profile_info_form_tv"
+                            android:text="@string/rebindnicknamenull" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:id="@+id/rebindnicknameimg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <include layout="@layout/gray_divider_v" />
+            </LinearLayout>
+            <!-- 信息2 手机号,邮箱 -->
+
+            <LinearLayout
+                android:id="@+id/info_content_two"
+                style="@style/profile_info_lyt" >
+
+                <include layout="@layout/gray_divider_v" />
+
+                <RelativeLayout
+                    android:id="@+id/rebind_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector" >
+
+                    <TextView
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="@string/rebandphone" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/reband_phone_text"
+                            style="@style/profile_info_form_tv"
+                            android:text="15069038287" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <include layout="@layout/gray_divider_v_ml20" />
+
+                <RelativeLayout
+                    android:id="@+id/rebind_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector" >
+
+                    <TextView
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="@string/rebandemail" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/reband_email_text"
+                            style="@style/profile_info_form_tv"
+                            android:text="@string/rebindhasnot" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <!-- 修改密码 -->
+
+                <include layout="@layout/gray_divider_v_ml20" />
+
+                <TextView
+                    android:id="@+id/modify_pwd"
+                    style="@style/profile_info_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector"
+                    android:clickable="true"
+                    android:text="@string/more_modifypwd" />
+
+                <include layout="@layout/gray_divider_v" />
+            </LinearLayout>
+            <!-- 信息3 流量,余额 -->
+
+            <LinearLayout
+                android:id="@+id/info_content_three"
+                style="@style/profile_info_lyt" >
+
+                <include layout="@layout/gray_divider_v" />
+
+                <RelativeLayout
+                    android:id="@+id/rebind_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector" >
+
+                    <TextView
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="@string/str_cloud_query_title" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_surplus_flow_value"
+                            style="@style/profile_info_form_tv"
+                            android:text="500G" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rebind_hasused"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="使用流量" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/reband_hasused_text"
+                            style="@style/profile_info_form_tv"
+                            android:text="200G" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/gray_divider_v_ml20"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.5dp"
+                    android:background="@drawable/list_item_selector"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/profile_info_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.5dp"
+                        android:text="余额" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/reband_balance_text"
+                            style="@style/profile_info_form_tv"
+                            android:text="300元" />
+                    </LinearLayout>
+
+                    <!-- 右侧箭头图标 -->
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/morefragment_next_icon"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <include layout="@layout/gray_divider_v" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

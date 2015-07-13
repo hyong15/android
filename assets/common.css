@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+body {margin:0; font-family:Arial, Helvetica, sans-serif;}
+html, html body { height:100%; }
+div, span, p, form, ul, ol, li, h1, h2, h3, h4, h5, h6, th, td, dl, dt, dd, caption, a, legend, hr, b,blockquote,textarea { margin:0; padding:0; border:0;}
+ul, li,ol { list-style-type:none;}
+h1, h2, h3, h4, h5, h6,table, input, textarea, select, button {vertical-align:middle; }
+img, a img { border:none; }
+table { border-collapse:collapse; border-spacing:0; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal; }
+q:before, q:after { content:''; }
+a{text-decoration:none;color:#000000;}
+
+/* 通用 */
+.left { float:left;}
+.right { float:right; }
+.news_body {
+			-webkit-box-shadow: 0px 0px 6px #9098a3;
+			-webkit-border-radius:6px;
+			padding:10px 10px 6px 10px;
+	    }
+
+		 h2{
+			width:100px;
+			text-align:center;
+			font-size:12px;
+			margin:8px auto 8px auto;
+			background-color: #e5e5e5;
+			-webkit-border-radius: 2px;
+			color:#666666;
+			font-weight:normal;
+			line-height:24px;
+		}
+			h1 {
+	font-size:18px;
+	line-height:30px;
+	color:#ffffff;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:left;
+	background:rgba(0, 0, 0, 0.6) none repeat scroll 0 0 !important;
+	filter: alpha(opacity=60);
+	background:#040505;
+	text-indent:1em;
+	left: -5px;
+		} 
+		
+		.wenzi{ font-size:16px;
+		        padding:3px;
+				line-height:22px;
+				text-indent: 2em;
+			    }
+		.img_container{
+			position:relative;
+		}
+		.img_container img{ width:100%;}
+        .xq{ line-height:22px; border-top:#eff1f3 1px solid; font-size:14px;color:#666666;text-indent:1em; vertical-align:middle;}
+		.xq a:link,.xq a:visited{color:#6899da;text-decoration: none;}
+        .xq a:hover ,.xq a:active{color: #0159a0;text-decoration:none;}
+        .jt{ vertical-align:middle;}
+		
+		.monitor{}
+
+        .ull{
+			width:100%;
+		}
+		.ull a span{
+			color:#666666;
+			float:right;
+			font-weight:normal;
+		}
+
+		.ull a {
+		    width:100%;
+			list-style-type:none;
+			line-height:24px;
+			font-size:16px;
+			margin-right:5px;
+			border-bottom:1px solid #ccc;
+			display:block;
+		}
+		.ull a{text-decoration:none;}
+		.ull a:link,.ull a:visited{color:#000000;text-decoration: none;}
+        .ull a:hover ,.ull a:active{color:#000000;text-decoration:none;}
+        .ydcs{ font-size:12px;color:#666666; text-align:right; border-top:#eff1f3 1px solid; line-height:22px;}
+
+
+        .bt{ font-size:18px; font-weight:bold; line-height:24px; width:100%;}
+		.hs{ font-size:12px; font-weight:normal; color:#666666;}
+		.djxx{width:100%;}
+		.djxx dt{ width:100%;}
+		.djxx dt img{width:100%;}
+		.djxx dd{ font-size:16px; line-height:22px;width:100%;text-indent:2em; padding-top:8px;}
+		
+		
+	/*ҳiPhone*/	
+	.wrap{ width:100%;}
+	h6{ width:90%; margin:0 auto; font-size:22px; color:#000000; text-align:center; line-height:30px; margin-top:15px;}
+	.down{ width:90%; margin:0 auto; margin-top:10px;}	
+	.sj{ width:50%;float:left;}
+	.sj img{ width:100%;}
+	.anv{ width:50%;margin-top:25%; float:left;}
+	.anv p{ width:90%; margin:0 auto; margin-bottom:10px;}
+	.anv p img{ width:100%;}
+	.banben{ font-size:16px; color:#3d9532; line-height:24px;}
+	.bq{ width:100%; font-size:12px; text-align:center; line-height:18px; float:left; color:#7c7c7c; margin-top:30px;}
+	.bqa{ font-size:13px; font-weight:bold;}
+	/*ҳiPhone*/	
+	
+	/*cxym*/
+	.cxym{width:100%;}
+	.cxym dt{ width:95%;}
+	.cxym dt img{width:100%;}
+	.cxym dd{width:95%;margin:0 auto; vertical-align:middle;}
+	.cxym dd p{ font-size:16px; color:#515151; line-height:24px; margin-top:12px;text-indent:2em;}
+	.cxym dd h3{ font-size:18px; line-height:24px; margin-top:25px; font-weight:600;}
+	.cxym dd h4{ font-size:17px; line-height:24px; margin-top:18px; font-weight:600;}
+	.cxymbt{ width:95%;font-size:20px; font-weight:bold; line-height:28px; border-left:#fe4900 solid 5px; border-bottom:#fe4900 solid 1px; margin-top:15px; 
+	}
+/*【通用Button】样式， 如：余下全文button等*/
+.artBt{display:block;border:1px solid #DFDFDF;text-align:center;border-bottom:1px solid #DBDBDB;cursor:pointer;color:#555555;font-size:15px;
+-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+background:-webkit-linear-gradient(top,#F8F8F8,#EDEDED);
+background:-webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#EDEDED)); /* for older webkit (android2.3-, ios4-) */
+-moz-box-shadow:inset -1px 3px 5px 0px white;-webkit-box-shadow:inset -1px 3px 5px 0px white;box-shadow:inset -1px 3px 5px 0px white;}
+a.artBt:link,a.artBt:visited{height:36px;line-height:36px;color:#555555;}
+a.artBt:active{color:#9E9E9E;background:-webkit-linear-gradient(top,#F8F8F8,#EDEDED);background:-webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#EDEDED));}
+.artIcon,.advertise a{background:url(http://u1.sinaimg.cn/upload/cms/image/tech/article_icon_v2.1.4.png) no-repeat 0px 0px;background-size:50px auto;}
+.line{height:2px;line-height:2px;background:#e3e3e3;}
+/*【通用Button】样式， 如：余下全文button等*/
+.cxlp{width:98%;margin:0 auto;margin-top:15px;border-collapse:collapse;border:1px solid #c8c8c8;line-height:26px;font-size:14px; background:#FFFFFF;}
+.cxlp th{border:1px solid #e6e6e6; text-align:left; padding:8px; background-color:#e9f3fa;}
+.cxlp td{border:1px solid #e6e6e6; text-align:left; padding:8px;}
+.lxdh{width:98%;margin:0 auto;margin-top:15px; border-collapse:collapse;border:1px solid #c8c8c8;line-height:38px;font-size:14px; background:#FFFFFF;}
+.lxdh th{text-align:left; padding-left:8px; background-color:#e9f3fa; border-bottom:1px solid #b2b2b2;line-height:38px;}
+.lxdh td{ border-bottom:1px solid #e6e6e6;text-align:left; padding-left:8px;line-height:38px;}
+
+/*免责声明*/
+.smtop{ width:98%; margin:0 auto; font-size:12px; color:#515151; line-height:18px; margin-top:12px;text-indent:2em;}
+.smh{width:98%; margin:0 auto;line-height:14px; font-size:14px; margin-top:20px; font-weight:normal;}
+.smxz{width:90%; margin:0 auto;}
+.smxz .details{font-size:14px; color:#686868; line-height:20px; margin-top:10px;text-indent:2em;list-style-type:none;}
+.smxz .title{font-size:20px; color:#515252;text-indent:0em; margin-top:10px;}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dialog_left_margin">0dp</dimen>
+    <dimen name="dialog_top_margin">0dp</dimen>
+    <dimen name="dialog_right_margin">0dp</dimen>
+    <dimen name="dialog_bottom_margin">0dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">0dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">0dp</dimen>
+    <dimen name="dialog_title_logo_left_margin">0dp</dimen>
+    <dimen name="dialog_title_height">0dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">12dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">24dp</dimen>
+    <dimen name="third_peripherals_top_margin_middle">12dp</dimen>
+
+    <!-- customize -->
+    <dimen name="composer_item_margin_vertical">20.0dip</dimen>
+    <dimen name="composer_item_margin_top">30.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- cloud -->
+    <dimen name="cloud_text_min_size">12sp</dimen>
+    <dimen name="cloud_text_mid_size">18sp</dimen>
+    <dimen name="cloud_text_max_size">22sp</dimen>
+    <dimen name="cloud_text_large_size">44sp</dimen>
+    <dimen name="person_center_tab_height">80dp</dimen>
+    <dimen name="dialog_disclaimer_height">400dp</dimen>
+    <!-- 个人中心-功能设置-mtu设置 -->
+    <dimen name="person_setting_mtu_width">25dp</dimen>
+    <dimen name="person_setting_mtu_height">25dp</dimen>
+
+</resources>

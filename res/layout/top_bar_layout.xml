@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbarh"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/welcome_blue"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/tab_1" />
+
+        <TextView
+            android:id="@+id/currentmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_video_play"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/selectscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/currentmenu"
+            android:src="@drawable/screen_down_icon"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/tab_2" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alarmnet"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/account_error_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/tanhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/warning" />
+
+        <TextView
+            android:id="@+id/accounterror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/next"
+            android:layout_toRightOf="@+id/tanhao"
+            android:singleLine="false"
+            android:text="@string/network_error_tips"
+            android:textColor="@color/logintextcolor1"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/morefragment_next_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

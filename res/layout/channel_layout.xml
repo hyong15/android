@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/connect_all" >
+
+        <RelativeLayout
+            android:id="@+id/channal_moddle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.jovision.views.MyGridView
+                android:id="@+id/channel_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20px"
+                android:cacheColorHint="@color/transparent"
+                android:horizontalSpacing="15px"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:verticalSpacing="15px" >
+            </com.jovision.views.MyGridView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/connect_all"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/blue_bg"
+        android:text="@string/device_connect"
+        android:textColor="@color/more_fragment_color3"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="activity_switch_anim_duration">250</integer>
+    <integer name="person_setting_mtu_radio_one">700</integer>
+    <integer name="person_setting_mtu_radio_two">1400</integer>
+
+</resources>

@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quickSetParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" >
+
+        <!-- ipc网络 -->
+
+        <LinearLayout
+            android:id="@+id/ipcwifilayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.jovision.views.RefreshableListView
+                android:id="@+id/ipcwifilistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="true"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <!-- 待配置wifi -->
+
+        <LinearLayout
+            android:id="@+id/mobilewifilayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_info_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <EditText
+                        android:id="@+id/deswifiname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/str_wifi_name"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/userinfocolor"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/deswifipwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/str_wifi_pass"
+                        android:inputType=""
+                        android:paddingLeft="10dp"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/userinfocolor"
+                        android:textSize="18sp" />
+
+                    <ToggleButton
+                        android:id="@+id/deswifieye"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/eye_selector"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/prepare_step6"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/mobilewifibg"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/video_list_bg" >
+
+                <com.jovision.views.RefreshableListView
+                    android:id="@+id/mobilewifilistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@color/more_fragment_color2"
+                    android:dividerHeight="1px"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="true"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_setting_manualconnect"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_bg"
+                android:text="@string/str_quick_setting_wifibymanul"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 帮助网页 -->
+
+        <LinearLayout
+            android:id="@+id/helplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/helpimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+        <!-- 手动添加wifi -->
+
+        <LinearLayout
+            android:id="@+id/manualwifilayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/manual_wifiname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/manual_wifiname_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_quick_setting_manual_wifiname"
+                    android:textColor="@color/leftdevicecolor"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/manual_wifiname_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/editimport"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manual_wifipassword_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/manual_wifipassword_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_quick_setting_manual_wifipassword"
+                    android:textColor="@color/leftdevicecolor"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/manual_wifipassword_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/editimport"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/leftdevicecolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manual_wifiauth_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/manual_wifiauth_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_quick_setting_manual_wifiauth"
+                    android:textColor="@color/leftdevicecolor"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/manual_wifiauth_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manual_wifiencrypt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/manual_wifiencrypt_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/str_quick_setting_manual_wifiencrypt"
+                    android:textColor="@color/leftdevicecolor"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/manual_wifiencrypt_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/manual_addeditsave"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/blue_bg"
+                    android:text="@string/str_new_add_device_AP"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 手动配置wifi -->
+
+</LinearLayout>

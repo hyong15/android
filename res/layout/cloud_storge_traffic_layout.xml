@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bar_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/blank_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 顶部空白 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/cloud_traffic_color_1" >
+                </View>
+                <!-- 顶部灰色实线 -->
+
+                <include layout="@layout/gray_divider_v" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/cloud_service"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/blank_one"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:id="@+id/item_cloud_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <!-- 左侧图标 -->
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cloud_function"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+
+                <!-- 功能名称 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/item_cloud_service"
+                    android:text="@string/person_service_cloud"
+                    android:textColor="@color/more_fragment_color5"
+                    android:textSize="16sp" />
+
+                <!-- 右侧箭头图标 -->
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/morefragment_next_icon"
+                    android:contentDescription="@null" />
+                <!-- 底部灰色实线 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/blank_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cloud_service"
+                android:orientation="vertical" >
+
+                <!-- 顶部空白 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/cloud_traffic_color_1" >
+                </View>
+                <!-- 顶部灰色实线 -->
+
+                <include layout="@layout/gray_divider_v" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/flow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/blank_two"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:id="@+id/item_flow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <!-- 左侧图标 -->
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/myservice_flow"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+
+                <!-- 功能名称 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/item_flow"
+                    android:text="流量"
+                    android:textColor="@color/more_fragment_color5"
+                    android:textSize="16sp" />
+                <!-- 底部灰色实线 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_top_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flow"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="12dp" >
+
+                    <TextView
+                        android:id="@+id/tv_charge_left_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/str_cloud_charge_left"
+                        android:textColor="@color/cloud_traffic_title"
+                        android:textSize="@dimen/cloud_text_max_size" />
+
+                    <TextView
+                        android:id="@+id/tv_charge_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_charge_left_title"
+                        android:layout_centerInParent="true"
+                        android:singleLine="true"
+                        android:text="- -"
+                        android:textColor="@color/cloud_traffic_value"
+                        android:textSize="@dimen/cloud_text_large_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/cloud_traffic_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="12dp" >
+
+                    <TextView
+                        android:id="@+id/tv_free_left_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/str_cloud_free_left"
+                        android:textColor="@color/cloud_traffic_title"
+                        android:textSize="@dimen/cloud_text_max_size" />
+
+                    <TextView
+                        android:id="@+id/tv_free_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_free_left_title"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="- -"
+                        android:textColor="@color/cloud_traffic_value"
+                        android:textSize="@dimen/cloud_text_large_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_below="@id/lly_top_tips"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" >
+
+                <com.jovision.views.CircleProgressBar
+                    android:id="@+id/circleProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/tv_left_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:text="@string/str_cloud_free_left"
+                        android:textColor="@color/cloud_traffic_title"
+                        android:textSize="@dimen/cloud_text_mid_size" />
+
+                    <TextView
+                        android:id="@+id/tv_free_left_cir_pct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_left_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:text="- -"
+                        android:textColor="@color/cloud_traffic_circle_fill"
+                        android:textSize="52sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
