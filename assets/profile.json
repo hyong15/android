@@ -1,22 +1,6 @@
 {
     "profile": [
         {
-            "itemFlag": "SHOW_MEDIA",
-            "itemImg": "R.drawable.morefragment_imageview_icon",
-            "itemName": "R.string.person_item_imgview",
-            "dismiss": false,
-            "localDismiss": false,
-            "isNew": false,
-            "showWhiteBlock": false,
-            "showRightCircleBtn": false,
-            "showRightCircleBtnSelected": false,
-            "showVersion": false,
-            "showTVNews": false,
-            "showBBSNews": false,
-            "isLast": false,
-            "comment": "图像查看"
-        },
-        {
             "itemFlag": "Setting",
             "itemImg": "R.drawable.morefragment_config_icon",
             "itemName": "R.string.person_item_setting",

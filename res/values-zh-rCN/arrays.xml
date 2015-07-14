@@ -5,7 +5,7 @@
     <string-array name="array_tab">
         <item>我的设备</item>
         <item>报警消息</item>
-        <item>配置</item>
+        <item>影像</item>
         <item>我的</item>
     </string-array>
     <!-- more feature func -->

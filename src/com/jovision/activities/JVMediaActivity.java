@@ -34,6 +34,9 @@ public class JVMediaActivity extends BaseActivity {
     public void onNotify(int what, int arg1, int arg2, Object obj) {
 
     }
+    public JVMediaActivity getContext(){
+    	return new JVMediaActivity();
+    }
 
     @Override
     protected void initSettings() {
